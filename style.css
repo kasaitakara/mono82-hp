@@ -424,3 +424,15 @@ h2 {
     gap: 6px;
   }
 }
+
+
+/* mono82 site spacing tune */
+.site-main {
+  position: relative;
+  left: 12px;
+  width: calc(100% - 12px);
+}
+
+.demo-button {
+  padding-right: 20px;
+}
