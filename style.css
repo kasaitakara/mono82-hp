@@ -306,11 +306,17 @@ h2 {
 }
 
 .demo-play-icon {
-  color: var(--text);
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid var(--text);
+  flex: 0 0 auto;
 }
 
 .demo-button.is-playing .demo-play-icon {
-  color: var(--accent);
+  border-left-color: var(--accent);
 }
 
 .news-row {
