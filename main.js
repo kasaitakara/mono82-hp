@@ -18,7 +18,7 @@ const translations = {
   en: {
     hero: "2 tracks, 32 steps.<br>a minimal sequencer with FM synthesis.",
     demo_note: "demo audio coming soon.",
-    news_beta: "beta version available",
+    news_beta: "beta version scheduled",
     try_beta: "try beta",
     beta_status: "iPhone / PWA: tested<br>Android: not yet tested",
     contact_note: "contact address coming soon.",
@@ -54,7 +54,7 @@ const translations = {
   ja: {
     hero: "2トラック、32ステップ。<br>FMシンセで音を作る、ミニマルシーケンサー。",
     demo_note: "デモ音源は準備中です。",
-    news_beta: "ベータ版公開",
+    news_beta: "ベータ版公開予定",
     try_beta: "try beta",
     beta_status: "iPhone / PWA：動作確認済み<br>Android：未確認",
     contact_note: "連絡先は準備中です。",
