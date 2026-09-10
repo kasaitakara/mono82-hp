@@ -192,19 +192,19 @@ demoButtons.forEach(button => {
       return;
     }
 
+    stopActiveDemo();
+
+    activeDemoButton = button;
+    button.classList.add("is-playing");
+    button.setAttribute("aria-pressed", "true");
+
     const src = button.dataset.src;
     if (!src) {
       return;
     }
 
-    stopActiveDemo();
-
     const audio = new Audio(src);
-    activeDemoButton = button;
     activeDemoAudio = audio;
-
-    button.classList.add("is-playing");
-    button.setAttribute("aria-pressed", "true");
 
     audio.addEventListener("ended", stopActiveDemo, { once: true });
 
@@ -216,7 +216,6 @@ demoButtons.forEach(button => {
     }
   });
 });
-
 
 const savedTheme = localStorage.getItem(STORAGE_THEME);
 applyTheme(THEMES.includes(savedTheme) ? savedTheme : "theme-mono82");

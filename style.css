@@ -305,18 +305,32 @@ h2 {
   cursor: pointer;
 }
 
+.demo-button:active {
+  color: var(--text);
+}
+
 .demo-play-icon {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 8px solid var(--text);
-  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 12px;
+  flex: 0 0 10px;
+  color: var(--text);
+}
+
+.demo-play-icon svg {
+  display: block;
+  width: 10px;
+  height: 12px;
+}
+
+.demo-play-icon path {
+  fill: currentColor;
 }
 
 .demo-button.is-playing .demo-play-icon {
-  border-left-color: var(--accent);
+  color: var(--accent);
 }
 
 .news-row {
