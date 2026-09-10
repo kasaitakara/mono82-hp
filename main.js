@@ -163,6 +163,61 @@ languageChoices.forEach(button => {
   });
 });
 
+
+const demoButtons = [...document.querySelectorAll(".demo-button")];
+let activeDemoButton = null;
+let activeDemoAudio = null;
+
+function resetDemoButton(button) {
+  if (!button) return;
+  button.classList.remove("is-playing");
+  button.setAttribute("aria-pressed", "false");
+}
+
+function stopActiveDemo() {
+  if (activeDemoAudio) {
+    activeDemoAudio.pause();
+    activeDemoAudio.currentTime = 0;
+  }
+
+  resetDemoButton(activeDemoButton);
+  activeDemoAudio = null;
+  activeDemoButton = null;
+}
+
+demoButtons.forEach(button => {
+  button.addEventListener("click", async () => {
+    if (button === activeDemoButton) {
+      stopActiveDemo();
+      return;
+    }
+
+    const src = button.dataset.src;
+    if (!src) {
+      return;
+    }
+
+    stopActiveDemo();
+
+    const audio = new Audio(src);
+    activeDemoButton = button;
+    activeDemoAudio = audio;
+
+    button.classList.add("is-playing");
+    button.setAttribute("aria-pressed", "true");
+
+    audio.addEventListener("ended", stopActiveDemo, { once: true });
+
+    try {
+      await audio.play();
+    } catch (error) {
+      stopActiveDemo();
+      console.error("demo playback failed:", error);
+    }
+  });
+});
+
+
 const savedTheme = localStorage.getItem(STORAGE_THEME);
 applyTheme(THEMES.includes(savedTheme) ? savedTheme : "theme-mono82");
 

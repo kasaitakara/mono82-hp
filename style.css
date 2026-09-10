@@ -301,6 +301,18 @@ h2 {
   opacity: 1;
 }
 
+.demo-button {
+  cursor: pointer;
+}
+
+.demo-play-icon {
+  color: var(--text);
+}
+
+.demo-button.is-playing .demo-play-icon {
+  color: var(--accent);
+}
+
 .news-row {
   display: grid;
   grid-template-columns: 104px minmax(0, 1fr);
