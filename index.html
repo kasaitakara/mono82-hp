@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-mono82">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0e0e0e">
+  <meta name="description" content="mono82 - a minimal 2-track, 32-step sequencer with FM synthesis.">
+  <title>mono82</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <nav class="global-nav" aria-label="main">
+        <button class="nav-button active" type="button" data-view="home">mono82</button>
+        <button class="nav-button" type="button" data-view="features">features</button>
+        <button class="nav-button" type="button" data-view="manual">manual</button>
+        <button class="nav-button" type="button" data-view="privacy">privacy</button>
+      </nav>
+
+      <div class="global-controls">
+        <div class="language-switch" aria-label="language">
+          <button class="language-choice active" type="button" data-language="en" aria-pressed="true">en</button>
+          <span class="language-slash">/</span>
+          <button class="language-choice" type="button" data-language="ja" aria-pressed="false">jp</button>
+        </div>
+
+        <button id="theme-button" class="plain-button theme-button" type="button" aria-label="color theme" title="color theme">
+          <svg class="mono82-icon mono82-theme-paint-icon" viewBox="0 0 14 15" aria-hidden="true">
+              <rect class="mono82-theme-paint-fill" x="2" y="1" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="3" y="1" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="4" y="1" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="5" y="1" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="6" y="1" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="7" y="1" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="8" y="1" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="9" y="1" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="10" y="1" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="1" y="2" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="2" y="2" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="10" y="2" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="11" y="2" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="1" y="3" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="2" y="3" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="10" y="3" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="11" y="3" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="1" y="4" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="2" y="4" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="10" y="4" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="11" y="4" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="12" y="4" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="2" y="5" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="3" y="5" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="4" y="5" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="5" y="5" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="6" y="5" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="7" y="5" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="8" y="5" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="9" y="5" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="10" y="5" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="11" y="5" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="12" y="5" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="12" y="6" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="6" y="7" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="7" y="7" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="8" y="7" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="9" y="7" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="10" y="7" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="11" y="7" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="12" y="7" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="6" y="8" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="7" y="8" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="5" y="9" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="6" y="9" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="7" y="9" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="5" y="10" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="6" y="10" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="7" y="10" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="5" y="11" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="7" y="11" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="5" y="12" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="6" y="12" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="7" y="12" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="5" y="13" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="6" y="13" width="1" height="1" />
+              <rect class="mono82-theme-paint-fill" x="7" y="13" width="1" height="1" />
+            </svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <section id="view-home" class="view active" data-view-panel="home">
+        <div class="hero">
+          <h1>mono82</h1>
+          <p class="hero-copy" data-i18n="hero">
+            2 tracks, 32 steps.<br>
+            a minimal sequencer with FM synthesis.
+          </p>
+        </div>
+
+        <p class="specs">
+          2 tracks / 8 sounds / 32 steps / 32 patterns / FM synthesis / song mode
+        </p>
+
+        <section class="home-section">
+          <h2>demo</h2>
+          <div class="demo-list">
+            <button class="row-button demo-button" type="button" disabled>electro <span>▶</span></button>
+            <button class="row-button demo-button" type="button" disabled>techno <span>▶</span></button>
+            <button class="row-button demo-button" type="button" disabled>ambient <span>▶</span></button>
+            <button class="row-button demo-button" type="button" disabled>chillhop <span>▶</span></button>
+          </div>
+          <p class="small-note" data-i18n="demo_note">demo audio coming soon.</p>
+        </section>
+
+        <section class="home-section">
+          <h2>news</h2>
+          <div class="news-list">
+            <div class="news-row">
+              <time datetime="2026-09-10">2026.09.10</time>
+              <span data-i18n="news_beta">beta version available</span>
+            </div>
+          </div>
+        </section>
+<section class="home-section beta-section">
+          <a id="beta-link" class="primary-link disabled-link" href="#" aria-disabled="true" data-i18n="try_beta">try beta</a>
+          <p class="small-note" data-i18n="beta_status">
+            iPhone / PWA: tested<br>
+            Android: not yet tested
+          </p>
+        </section>
+
+        <section class="home-section contact-section">
+          <h2>contact</h2>
+          <p class="small-note">
+            <span data-i18n="contact_note">contact address coming soon.</span>
+          </p>
+        </section>
+      </section>
+
+
+      <section id="view-features" class="view" data-view-panel="features">
+        <div class="page-head">
+          <h1>features</h1>
+          <p data-i18n="features_intro">mono82 specifications.</p>
+        </div>
+
+        <div class="feature-block">
+          <h2>structure</h2>
+          <p data-i18n="spec_structure">2 tracks<br>8 sounds: Melodic 1–4 / Rhythm a–d<br>max. 2 sounds per step</p>
+        </div>
+
+        <div class="feature-block">
+          <h2>sequencer</h2>
+          <p data-i18n="spec_sequencer">32 steps<br>32 patterns<br>pattern length: 1–32 steps<br>pattern repeat<br>step shift<br>randomize<br>mute / solo</p>
+        </div>
+
+        <div class="feature-block">
+          <h2>song</h2>
+          <p data-i18n="spec_song">pattern arrangement<br>pattern repeat<br>single pattern loop / range loop<br>master reverb<br>swing</p>
+        </div>
+
+        <div class="feature-block">
+          <h2>melodic sound</h2>
+          <p data-i18n="spec_melodic">FM synthesis<br>level<br>attack<br>hold / decay<br>filter<br>resonance<br>FM depth / ratio<br>2 LFOs</p>
+        </div>
+
+        <div class="feature-block">
+          <h2>rhythm sound</h2>
+          <p data-i18n="spec_rhythm">sine oscillator + noise mix<br>note<br>level<br>attack<br>hold / decay<br>filter<br>resonance<br>2 LFOs</p>
+        </div>
+
+        <div class="feature-block">
+          <h2>step parameters</h2>
+          <p data-i18n="spec_step">Melodic: Level / Note / Chord / Pan / Nudge / Probability / Substep / Strum<br>Rhythm: Level / Note / Pan / Nudge / Probability / Substep / Substep Probability</p>
+        </div>
+
+        <div class="feature-block">
+          <h2>preset</h2>
+          <p data-i18n="spec_preset">factory sound presets<br>user sound presets</p>
+        </div>
+
+        <div class="feature-block">
+          <h2>project</h2>
+          <p data-i18n="spec_project">new / load / save / save as<br>project import / export<br>audio export<br>song export</p>
+        </div>
+
+        <div class="feature-block">
+          <h2>system</h2>
+          <p data-i18n="spec_system">PWA<br>English / Japanese<br>iPhone: tested<br>Android: not yet tested</p>
+        </div>
+      </section>
+
+      <section id="view-manual" class="view" data-view-panel="manual">
+        <div class="page-head">
+          <h1>manual</h1>
+          <p data-i18n="manual_intro">basic mono82 operation guide.</p>
+        </div>
+
+        <div class="feature-block">
+          <h2>overview</h2>
+          <p data-i18n="manual_overview">mono82 has two Sound Banks: Melodic 1–4 and Rhythm a–d. each step can contain one sound from each bank, for a maximum of two sounds on the same step.</p>
+        </div>
+
+        <div class="feature-block">
+          <h2>sequence</h2>
+          <p data-i18n="manual_sequence">tap a step to place or remove the selected sound. melodic sounds appear as the upper horizontal mark and rhythm sounds as the lower-left square. pattern length can be set from 1 to 32 steps. shortening a pattern does not delete the hidden step data.</p>
+        </div>
+
+        <div class="feature-block">
+          <h2>pattern / song</h2>
+          <p data-i18n="manual_pattern">create up to 32 patterns and arrange them in Song mode. patterns can be looped individually or as a selected range. copy a selected range and paste it anywhere you choose. in Song view, copy includes all pattern information. in Pattern view, copy includes all step information. in Offset view, copy includes all step information for the currently selected sound bank. sequences can also be shifted left/right or randomized.</p>
+        </div>
+
+        <div class="feature-block">
+          <h2>melodic sound</h2>
+          <p data-i18n="manual_melodic">Melodic sounds use FM synthesis. each step can control Note or Chord, Level, Pan, Nudge, Probability, Substep and Strum. tap Note / Chord to switch between them.</p>
+        </div>
+
+        <div class="feature-block">
+          <h2>rhythm sound</h2>
+          <p data-i18n="manual_rhythm">Rhythm sounds combine sine synthesis and noise. each step can control Note, Level, Pan, Nudge, Probability, Substep and Substep Probability.</p>
+        </div>
+
+        <div class="feature-block">
+          <h2>sound design</h2>
+          <p data-i18n="manual_sound">sound parameters include Level, Attack, Hold/Decay, Filter, Resonance and two LFOs. Melodic adds FM Depth and Ratio; Rhythm adds Noise and Note.</p>
+        </div>
+
+        <div class="feature-block">
+          <h2>project</h2>
+          <p data-i18n="manual_project">create, load and overwrite projects, or duplicate them with Save As. project data can also be imported and exported for backup or transfer. audio and song export are available.</p>
+        </div>
+
+        <div class="feature-block">
+          <h2>preset</h2>
+          <p data-i18n="manual_preset">factory sound presets are included. your current sound can also be registered as a user preset and applied later. when selecting a preset, “now” lets you return to the current sound easily for quick comparison.</p>
+        </div>
+
+        <div class="feature-block">
+          <h2>color</h2>
+          <p data-i18n="manual_color">tap the ink icon to switch the color palette. it changes the appearance only and does not affect your project or sound.</p>
+        </div>
+
+        <div class="feature-block">
+          <h2>help mode</h2>
+          <p data-i18n="manual_help">the app also includes its own ? help mode. activate it, then tap an outlined control to see an explanation in English or Japanese.</p>
+        </div>
+      </section>
+
+      <section id="view-privacy" class="view" data-view-panel="privacy">
+        <div class="page-head">
+          <h1>privacy</h1>
+        </div>
+
+        <div class="privacy-copy">
+          <p data-i18n="privacy_app">
+            mono82 does not collect or transmit personal information from within the app.
+          </p>
+          <p data-i18n="privacy_contact">
+            if you contact us by email, your email address and information contained in your message are received only as necessary to respond to your inquiry.
+          </p>
+          <p class="small-note" data-i18n="privacy_web">
+            this website policy will be updated before public release if external services such as embedded media or analytics are added.
+          </p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
