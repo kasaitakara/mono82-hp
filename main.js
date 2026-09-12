@@ -21,7 +21,6 @@ const translations = {
     news_beta: "beta version scheduled",
     try_beta: "try beta",
     beta_status: "iPhone / PWA: tested<br>Android: not yet tested<br>PC: basic operation tested / keyboard controls not supported",
-    contact_note: "contact address coming soon.",
 
     features_intro: "mono82 specifications.",
     spec_structure: "2 tracks<br>8 sounds: Melodic 1–4 / Rhythm a–d<br>max. 2 sounds per step",
@@ -57,7 +56,6 @@ const translations = {
     news_beta: "ベータ版公開予定",
     try_beta: "try beta",
     beta_status: "iPhone / PWA：動作確認済み<br>Android：未確認<br>PC：基本動作確認済み / キーボード操作未対応",
-    contact_note: "連絡先は準備中です。",
 
     features_intro: "mono82の仕様一覧です。",
     spec_structure: "2トラック<br>8サウンド：Melodic 1–4 / Rhythm a–d<br>1ステップ最大2サウンド",

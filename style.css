@@ -358,6 +358,15 @@ h2 {
   text-decoration: none;
 }
 
+.contact-link {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.contact-link:active {
+  color: var(--accent);
+}
+
 .disabled-link {
   cursor: default;
 }
