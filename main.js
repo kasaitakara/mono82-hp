@@ -42,7 +42,7 @@ const translations = {
     manual_rhythm: "Rhythm sounds combine sine synthesis and noise. each step can control Note, Level, Pan, Nudge, Probability, Substep and Substep Probability.",
     manual_sound: "sound parameters include Level, Attack, Hold/Decay, Filter, Resonance and two LFOs. Melodic adds FM Depth and Ratio; Rhythm adds Noise and Note.",
     manual_project: "create, load and overwrite projects, or duplicate them with Save As. project data can also be imported and exported for backup or transfer. audio and song export are available.",
-    manual_preset: "factory sound presets are included. your current sound can also be registered as a user preset and applied later. when selecting a preset, “now” lets you return to the current sound easily for quick comparison.",
+    manual_preset: "factory sound presets are coming soon. your current sound can be registered as a user preset and applied later. when selecting a preset, “now” lets you return to the current sound easily for quick comparison.",
     manual_color: "tap the ink icon to switch the color palette. it changes the appearance only and does not affect your project or sound.",
     manual_help: "the app also includes its own ? help mode. activate it, then tap an outlined control to see an explanation in English or Japanese.",
 
@@ -78,7 +78,7 @@ const translations = {
     manual_rhythm: "Rhythm Soundはサイン波とノイズを使用します。各ステップでNote、Level、Pan、Nudge、Probability、Substep、Substep Probabilityを設定できます。",
     manual_sound: "SoundにはLevel、Attack、Hold/Decay、Filter、Resonance、2基のLFOがあります。MelodicにはFM Depth／Ratio、RhythmにはNoise／Noteが加わります。",
     manual_project: "プロジェクトの新規作成、読み込み、上書き保存、Save Asによる複製保存ができます。Project Import / Exportでバックアップや受け渡しもでき、Audio Export / Song Exportにも対応しています。",
-    manual_preset: "ファクトリーサウンドプリセットを収録しています。現在のサウンドをユーザープリセットとして登録し、あとから適用することもできます。プリセット選択時には「now」で現在のサウンドに戻せるため、プリセットと今の音を簡単に聴き比べできます。",
+    manual_preset: "ファクトリーサウンドプリセットは準備中です。現在のサウンドをユーザープリセットとして登録し、あとから適用できます。プリセット選択時には「now」で現在のサウンドに戻せるため、プリセットと今の音を簡単に聴き比べできます。",
     manual_color: "インクアイコンをタップするとカラーパレットを切り替えられます。見た目だけが変わり、プロジェクトやサウンドには影響しません。",
     manual_help: "アプリ内には「？」のHelp Modeもあります。有効にして枠の付いた操作部をタップすると、英語／日本語で説明を表示します。",
 
