@@ -20,7 +20,7 @@ const translations = {
     demo_note: "demo audio coming soon.",
     news_beta: "beta version scheduled",
     try_beta: "try beta",
-    beta_status: "iPhone / PWA: tested<br>Android: not yet tested",
+    beta_status: "iPhone / PWA: tested<br>Android: not yet tested<br>PC: basic operation tested / keyboard controls not supported",
     contact_note: "contact address coming soon.",
 
     features_intro: "mono82 specifications.",
@@ -32,7 +32,7 @@ const translations = {
     spec_step: "Melodic: Level / Note / Chord / Pan / Nudge / Probability / Substep / Strum<br>Rhythm: Level / Note / Pan / Nudge / Probability / Substep / Substep Probability",
     spec_preset: "factory sound presets: coming soon<br>user sound presets",
     spec_project: "new / load / save / save as<br>project import / export<br>audio export<br>song export",
-    spec_system: "PWA<br>English / Japanese<br>iPhone: tested<br>Android: not yet tested",
+    spec_system: "PWA<br>English / Japanese<br>iPhone: tested<br>Android: not yet tested<br>PC: basic operation tested / keyboard controls not supported",
 
     manual_intro: "basic mono82 operation guide.",
     manual_overview: "mono82 has two Sound Banks: Melodic 1–4 and Rhythm a–d. each step can contain one sound from each bank, for a maximum of two sounds on the same step.",
@@ -56,7 +56,7 @@ const translations = {
     demo_note: "デモ音源は準備中です。",
     news_beta: "ベータ版公開予定",
     try_beta: "try beta",
-    beta_status: "iPhone / PWA：動作確認済み<br>Android：未確認",
+    beta_status: "iPhone / PWA：動作確認済み<br>Android：未確認<br>PC：基本動作確認済み / キーボード操作未対応",
     contact_note: "連絡先は準備中です。",
 
     features_intro: "mono82の仕様一覧です。",
@@ -68,7 +68,7 @@ const translations = {
     spec_step: "Melodic：Level / Note / Chord / Pan / Nudge / Probability / Substep / Strum<br>Rhythm：Level / Note / Pan / Nudge / Probability / Substep / Substep Probability",
     spec_preset: "ファクトリーサウンドプリセット：準備中<br>ユーザーサウンドプリセット",
     spec_project: "new / load / save / save as<br>Project Import / Export<br>Audio Export<br>Song Export",
-    spec_system: "PWA<br>English / Japanese<br>iPhone：動作確認済み<br>Android：未確認",
+    spec_system: "PWA<br>English / Japanese<br>iPhone：動作確認済み<br>Android：未確認<br>PC：基本動作確認済み / キーボード操作未対応",
 
     manual_intro: "mono82の基本操作ガイドです。",
     manual_overview: "mono82にはMelodic Sound Bank 1〜4とRhythm Sound Bank a〜dがあります。1ステップには各Sound Bankから1サウンドずつ、最大2サウンドを配置できます。",
