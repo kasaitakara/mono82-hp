@@ -30,7 +30,7 @@ const translations = {
     spec_melodic: "FM synthesis<br>level<br>attack<br>hold / decay<br>filter<br>resonance<br>FM depth / ratio<br>2 LFOs",
     spec_rhythm: "sine oscillator + noise mix<br>note<br>level<br>attack<br>hold / decay<br>filter<br>resonance<br>2 LFOs",
     spec_step: "Melodic: Level / Note / Chord / Pan / Nudge / Probability / Substep / Strum<br>Rhythm: Level / Note / Pan / Nudge / Probability / Substep / Substep Probability",
-    spec_preset: "factory sound presets<br>user sound presets",
+    spec_preset: "factory sound presets: coming soon<br>user sound presets",
     spec_project: "new / load / save / save as<br>project import / export<br>audio export<br>song export",
     spec_system: "PWA<br>English / Japanese<br>iPhone: tested<br>Android: not yet tested",
 
@@ -66,7 +66,7 @@ const translations = {
     spec_melodic: "FMシンセシス<br>Level<br>Attack<br>Hold / Decay<br>Filter<br>Resonance<br>FM Depth / Ratio<br>2 LFO",
     spec_rhythm: "サインオシレーター + ノイズミックス<br>Note<br>Level<br>Attack<br>Hold / Decay<br>Filter<br>Resonance<br>2 LFO",
     spec_step: "Melodic：Level / Note / Chord / Pan / Nudge / Probability / Substep / Strum<br>Rhythm：Level / Note / Pan / Nudge / Probability / Substep / Substep Probability",
-    spec_preset: "ファクトリーサウンドプリセット<br>ユーザーサウンドプリセット",
+    spec_preset: "ファクトリーサウンドプリセット：準備中<br>ユーザーサウンドプリセット",
     spec_project: "new / load / save / save as<br>Project Import / Export<br>Audio Export<br>Song Export",
     spec_system: "PWA<br>English / Japanese<br>iPhone：動作確認済み<br>Android：未確認",
 
