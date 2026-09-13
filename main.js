@@ -18,7 +18,10 @@ const translations = {
   en: {
     hero: "2 tracks, 32 steps.<br>a minimal sequencer with FM synthesis.",
     demo_note: "demo audio coming soon.",
-    news_beta: "beta version scheduled",
+    news_factory_presets: "factory sound presets added",
+    news_beta: "beta version released",
+    sample_project_desc: "A sample project created entirely in mono82. Download the .mono file and load it into mono82 to explore how it was made.",
+    sample_project_link: "electronica (.mono)",
     try_beta: "try beta",
     beta_status: "iPhone / PWA: tested<br>Android: not yet tested<br>PC: basic operation tested / keyboard controls not supported",
 
@@ -29,7 +32,7 @@ const translations = {
     spec_melodic: "FM synthesis<br>level<br>attack<br>hold / decay<br>filter<br>resonance<br>FM depth / ratio<br>2 LFOs",
     spec_rhythm: "sine oscillator + noise mix<br>note<br>level<br>attack<br>hold / decay<br>filter<br>resonance<br>2 LFOs",
     spec_step: "Melodic: Level / Note / Chord / Pan / Nudge / Probability / Substep / Strum<br>Rhythm: Level / Note / Pan / Nudge / Probability / Substep / Substep Probability",
-    spec_preset: "factory sound presets: coming soon<br>user sound presets",
+    spec_preset: "factory sound presets<br>user sound presets",
     spec_project: "new / load / save / save as<br>project import / export<br>audio export<br>song export",
     spec_system: "PWA<br>English / Japanese<br>iPhone: tested<br>Android: not yet tested<br>PC: basic operation tested / keyboard controls not supported",
 
@@ -41,7 +44,7 @@ const translations = {
     manual_rhythm: "Rhythm sounds combine sine synthesis and noise. each step can control Note, Level, Pan, Nudge, Probability, Substep and Substep Probability.",
     manual_sound: "sound parameters include Level, Attack, Hold/Decay, Filter, Resonance and two LFOs. Melodic adds FM Depth and Ratio; Rhythm adds Noise and Note.",
     manual_project: "create, load and overwrite projects, or duplicate them with Save As. project data can also be imported and exported for backup or transfer. audio and song export are available.",
-    manual_preset: "factory sound presets are coming soon. your current sound can be registered as a user preset and applied later. when selecting a preset, “now” lets you return to the current sound easily for quick comparison.",
+    manual_preset: "factory sound presets are included. your current sound can also be registered as a user preset and applied later. when selecting a preset, “now” lets you return to the current sound easily for quick comparison.",
     manual_color: "tap the ink icon to switch the color palette. it changes the appearance only and does not affect your project or sound.",
     manual_help: "the app also includes its own ? help mode. activate it, then tap an outlined control to see an explanation in English or Japanese.",
 
@@ -53,7 +56,10 @@ const translations = {
   ja: {
     hero: "2トラック、32ステップ。<br>FMシンセで音を作る、ミニマルシーケンサー。",
     demo_note: "デモ音源は準備中です。",
-    news_beta: "ベータ版公開予定",
+    news_factory_presets: "ファクトリーサウンドプリセットを追加",
+    news_beta: "ベータ版公開",
+    sample_project_desc: "mono82だけで制作したサンプルプロジェクトです。.monoファイルをダウンロードしてmono82に読み込むことで、曲の構成や設定を確認できます。",
+    sample_project_link: "electronica (.mono)",
     try_beta: "try beta",
     beta_status: "iPhone / PWA：動作確認済み<br>Android：未確認<br>PC：基本動作確認済み / キーボード操作未対応",
 
@@ -64,7 +70,7 @@ const translations = {
     spec_melodic: "FMシンセシス<br>Level<br>Attack<br>Hold / Decay<br>Filter<br>Resonance<br>FM Depth / Ratio<br>2 LFO",
     spec_rhythm: "サインオシレーター + ノイズミックス<br>Note<br>Level<br>Attack<br>Hold / Decay<br>Filter<br>Resonance<br>2 LFO",
     spec_step: "Melodic：Level / Note / Chord / Pan / Nudge / Probability / Substep / Strum<br>Rhythm：Level / Note / Pan / Nudge / Probability / Substep / Substep Probability",
-    spec_preset: "ファクトリーサウンドプリセット：準備中<br>ユーザーサウンドプリセット",
+    spec_preset: "ファクトリーサウンドプリセット<br>ユーザーサウンドプリセット",
     spec_project: "new / load / save / save as<br>Project Import / Export<br>Audio Export<br>Song Export",
     spec_system: "PWA<br>English / Japanese<br>iPhone：動作確認済み<br>Android：未確認<br>PC：基本動作確認済み / キーボード操作未対応",
 
@@ -76,7 +82,7 @@ const translations = {
     manual_rhythm: "Rhythm Soundはサイン波とノイズを使用します。各ステップでNote、Level、Pan、Nudge、Probability、Substep、Substep Probabilityを設定できます。",
     manual_sound: "SoundにはLevel、Attack、Hold/Decay、Filter、Resonance、2基のLFOがあります。MelodicにはFM Depth／Ratio、RhythmにはNoise／Noteが加わります。",
     manual_project: "プロジェクトの新規作成、読み込み、上書き保存、Save Asによる複製保存ができます。Project Import / Exportでバックアップや受け渡しもでき、Audio Export / Song Exportにも対応しています。",
-    manual_preset: "ファクトリーサウンドプリセットは準備中です。現在のサウンドをユーザープリセットとして登録し、あとから適用できます。プリセット選択時には「now」で現在のサウンドに戻せるため、プリセットと今の音を簡単に聴き比べできます。",
+    manual_preset: "ファクトリーサウンドプリセットを収録しています。現在のサウンドをユーザープリセットとして登録し、あとから適用できます。プリセット選択時には「now」で現在のサウンドに戻せるため、プリセットと今の音を簡単に聴き比べできます。",
     manual_color: "インクアイコンをタップするとカラーパレットを切り替えられます。見た目だけが変わり、プロジェクトやサウンドには影響しません。",
     manual_help: "アプリ内には「？」のHelp Modeもあります。有効にして枠の付いた操作部をタップすると、英語／日本語で説明を表示します。",
 
